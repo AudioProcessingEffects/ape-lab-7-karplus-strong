@@ -74,13 +74,13 @@
 					"bubblepoint" : 0.29,
 					"bubbleside" : 0,
 					"id" : "obj-11",
-					"linecount" : 10,
+					"linecount" : 12,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 124.0, 431.0, 150.0, 163.0 ],
-					"presentation_linecount" : 6,
-					"text" : "The tapin~ object is used to write to the delay's memory, while the tapout~ is used to read from the delay line.\n\nThe onepole~ object is a low-pass filter at a specific cutoff frequency (in this example, 5000Hz)"
+					"patching_rect" : [ 124.0, 431.0, 150.0, 191.0 ],
+					"presentation_linecount" : 7,
+					"text" : "The tapin~ object is used to write to the delay's memory, while the tapout~ is used to read from the delay line.\n\nThe onepole~ object is a low-pass filter at a specific cutoff frequency (in this example, 5000Hz). This simulates the decay of string."
 				}
 
 			}
