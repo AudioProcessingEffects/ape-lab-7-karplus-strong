@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 6,
-			"revision" : 4,
+			"revision" : 5,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 59.0, 106.0, 799.0, 689.0 ],
+		"rect" : [ 402.0, 153.0, 856.0, 689.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,12 +40,85 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.79,
+					"id" : "obj-19",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 311.0, 75.0, 330.0, 52.0 ],
+					"presentation_linecount" : 23,
+					"text" : "The 'setdomain 10' message sets the length of the function window to 10ms thus creating a very short burst of noise. Longer windows will result in noise-like output."
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.18,
+					"bubbleside" : 0,
+					"id" : "obj-12",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 73.0, 171.5, 73.0, 53.0 ],
+					"text" : "Generates white noise"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"bubblepoint" : 0.29,
+					"bubbleside" : 0,
+					"id" : "obj-11",
+					"linecount" : 10,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 124.0, 431.0, 150.0, 163.0 ],
+					"presentation_linecount" : 6,
+					"text" : "The tapin~ object is used to write to the delay's memory, while the tapout~ is used to read from the delay line.\n\nThe onepole~ object is a low-pass filter at a specific cutoff frequency (in this example, 5000Hz)"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-5",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 496.0, 349.0, 280.0, 52.0 ],
+					"presentation_linecount" : 3,
+					"text" : "This trigger object (shortened to t) sends out a bang (b) and the floating point number (f) from the above flonum object"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubble" : 1,
+					"id" : "obj-3",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 496.0, 282.0, 280.0, 52.0 ],
+					"text" : "Dividing the incoming frequency by 1000. provides us with the respective delay time needed for the tapout~ object"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 16.0,
 					"id" : "obj-26",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 24.0, 322.0, 25.0 ],
+					"patching_rect" : [ 45.0, 25.0, 322.0, 25.0 ],
 					"text" : "Example of a Karplus-Strong Algorithm"
 				}
 
