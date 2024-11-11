@@ -113,13 +113,14 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 16.0,
+					"fontsize" : 20.0,
 					"id" : "obj-26",
+					"linecount" : 2,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 25.0, 322.0, 25.0 ],
-					"text" : "Example of a Karplus-Strong Algorithm"
+					"patching_rect" : [ 45.0, 25.0, 353.0, 52.0 ],
+					"text" : "Example of a Karplus-Strong Algorithm - Plucked String"
 				}
 
 			}
@@ -305,7 +306,7 @@
 			}
 , 			{
 				"box" : 				{
-					"addpoints" : [ 0.0, 0.0, 0, 0.212765957446809, 1.0, 0, 10.0, 0.0, 0 ],
+					"addpoints" : [ 0.0, 0.0, 0, 0.0, 1.0, 0, 10.0, 0.0, 0 ],
 					"classic_curve" : 1,
 					"domain" : 10.0,
 					"id" : "obj-6",
