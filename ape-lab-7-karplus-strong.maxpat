@@ -48,7 +48,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 311.0, 75.0, 330.0, 52.0 ],
-					"presentation_linecount" : 23,
 					"text" : "The 'setdomain 10' message sets the length of the function window to 10ms thus creating a very short burst of noise. Longer windows will result in noise-like output."
 				}
 
@@ -78,8 +77,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 124.0, 431.0, 150.0, 191.0 ],
-					"presentation_linecount" : 7,
+					"patching_rect" : [ 124.0, 431.0, 153.0, 191.0 ],
 					"text" : "The tapin~ object is used to write to the delay's memory, while the tapout~ is used to read from the delay line.\n\nThe onepole~ object is a low-pass filter at a specific cutoff frequency (in this example, 5000Hz). This simulates the decay of string."
 				}
 
@@ -93,7 +91,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 496.0, 349.0, 280.0, 52.0 ],
-					"presentation_linecount" : 3,
 					"text" : "This trigger object (shortened to t) sends out a bang (b) and the floating point number (f) from the above flonum object"
 				}
 
@@ -119,8 +116,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 45.0, 25.0, 353.0, 52.0 ],
-					"text" : "Example of a Karplus-Strong Algorithm - Plucked String"
+					"patching_rect" : [ 45.0, 25.0, 374.0, 52.0 ],
+					"text" : "Example of the Karplus-Strong Algorithm - Plucked String"
 				}
 
 			}
