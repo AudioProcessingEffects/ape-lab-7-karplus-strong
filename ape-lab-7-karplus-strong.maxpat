@@ -40,6 +40,18 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 24.75, 138.0, 70.0, 22.0 ],
+					"text" : "loadmess 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"bubble" : 1,
 					"bubblepoint" : 0.57,
 					"bubbleside" : 2,
@@ -49,7 +61,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 889.0, 34.0, 293.0, 108.0 ],
-					"presentation_linecount" : 21,
 					"text" : "The dspstate~ object reports on the current status of the DSP. The second outlet reports the sampling rate. Used in conjuction with a [t b f] object, we can update the frequency to samples calculation using the correctly reported sampling rate. This object will update whenever Audio is turned on/off.",
 					"textjustification" : 1
 				}
@@ -124,7 +135,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 296.0, 146.0, 105.0, 67.0 ],
-					"presentation_linecount" : 5,
 					"text" : "Generates a band-limited random signal",
 					"textjustification" : 1
 				}
@@ -140,7 +150,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 225.0, 153.0, 73.0, 53.0 ],
-					"presentation_linecount" : 2,
 					"text" : "Generates pink noise",
 					"textjustification" : 1
 				}
@@ -203,8 +212,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 738.0, 288.0, 336.0, 38.0 ],
-					"presentation_linecount" : 3,
+					"patching_rect" : [ 738.0, 288.0, 339.0, 38.0 ],
 					"text" : "The sampstoms~ object converts samples to milliseconds. Note use right outlet for the number values."
 				}
 
@@ -273,7 +281,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 709.0, 361.0, 365.0, 38.0 ],
+					"patching_rect" : [ 709.0, 361.0, 366.0, 38.0 ],
 					"text" : "This trigger object (shortened to t) sends out a bang (b) and the floating point number (f) from the above flonum object"
 				}
 
@@ -614,6 +622,14 @@
 					"destination" : [ "obj-21", 0 ],
 					"midpoints" : [ 453.5, 422.0, 428.0, 422.0, 428.0, 330.0, 344.5, 330.0 ],
 					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-33", 0 ],
+					"midpoints" : [ 34.25, 180.0, 54.5, 180.0 ],
+					"source" : [ "obj-24", 0 ]
 				}
 
 			}
